@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Undangan Pernikahan Yono & Yani">
+  <meta name="theme-color" content="#3a86ff">
+  <title>Undangan Nikah Ana & Ibnu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!-- Loading Indicator -->
+  <div class="loading" id="loadingIndicator">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Background Elements -->
+  <div class="parallax-bg"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Halaman Awal -->
+  <div class="landing" id="landingPage">
+    <!-- Flower Decorations - Ukuran lebih kecil untuk mobile -->
+    <img src="img/atas.png" alt="Flower decoration" class="flower-decoration flower-top" loading="lazy">
+    <img src="img/bawah.png" alt="Flower decoration" class="flower-decoration flower-bottom" loading="lazy">
+    <div class="landing-content">
+      <div class="couple-names">
+        <h1 id="nama">Ana</h1>
+        <h1 id="nama">&</h1>
+        <h1 id="nama">Ibnu</h1>
+      </div>
+      <div class="invitation-text">
+        <p>Kepada Yth.</p>
+        <h2>Bapak/Ibu/Saudara/i</h2>
+        <p class="guest-name" id="guestName">nama</p>
+      </div>
+      <button class="invitation-button" onclick="openInvitation()">Buka Undangan</button>
+    </div>
+  </div>
+
+  <!-- Halaman Undangan -->
+  <div id="mainPage" class="hidden">
+    <!-- Flower Decorations untuk halaman utama - Ukuran lebih kecil untuk mobile -->
+    <img src="img/atas.png" alt="Flower decoration" class="page-decoration page-top" loading="lazy">
+    <img src="img/bawah.png" alt="Flower decoration" class="page-decoration page-bottom" loading="lazy">
+       
+    <div class="container">
+      <!-- Card pertama tanpa background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section>
+          <h3>Bismillahirrahmanirrahim</h3>
+          <p><br>Maha Suci Allah yang telah menciptakan mahkluk-Nya berpasang-pasangan. Ya Allah, Perkenalkan
+            putra-putri
+            kami untuk mengikuti sunah Rasul-Mu</p>
+          <p>Hormat kami,
+          <br><strong>Ibnu & Ana</strong></p>
+        </section>
+      </div>
+      
+      <!-- Card kedua dengan background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section>
+          <h2 class="couple-name">Ana Yulianti</h2>
+          <p class="couple-parents">Putri dari Bapak Wakijan & Sadiah <br>(Oku Selatan Sumatra Selatan)</p>
+          <p>dengan</p>
+          <h2 class="couple-name">Ibnu Solahudin</h2>
+          <p class="couple-parents">Putra dari Bapak Mualip & Siti Munawaroh <br>(Kebumen Jawa Tengah)</p>
+         
+        </section>
+      </div>      
+      
+      <!-- Card ketiga dengan background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section>
+          <h2>Assalamu'alaikum Wr.Wb</h2>
+          <p>Denngan memohon Rahmat dan Ridho Allah SWT, kami bermaksud untuk menyelengarakan resepsi pernikahan putra-puri
+          kami yang Insya Allah akan dilaksanakn pada :</p>
+          <h2>Resepsi Pernikahan</h2>
+          <h1>Jum'at. 20 Juni 2025</h1>
+          <p>Pukul : 08:00 - Selesai <br>Kediaman Mempelai Wanita <br>Jl.Bedeng Bes,Kel.Mekarsari,Kec.Warkuk Ranau Selatan, Kab.Ogan Komering Ulu Selatan</p>
+          <p>Tiada yang dapat kami ungkapkan selain ucapan terima kasih atas kehadiran dan do'a restu
+            Bapak/Ibu/Saudara/i
+          </p>
+          <h2>Wassalamu'alaikum Wr.Wb</h2>
+        </section>
+      </div>
+      
+      <!-- Card keempat dengan background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section id="acara">
+          <p style="font-family: 'Lobster', cursive;">Menuju hari bahagia:</p>
+          <div id="countdown" class="countdown" style="font-family: 'Lobster', cursive;"></div>
+          <p style="font-family: 'Lobster', cursive;"><strong><br>Akad Nikah:</strong></p>
+          <p style="font-family: 'Lobster', cursive;"><strong>Tanggal:</strong> kamis, 19 Juni 2025</p>
+          <p style="font-family: 'Lobster', cursive;"><strong>Waktu:</strong> 19:00 - Selesai</p>
+          <p style="font-family: 'Lobster', cursive;"><strong>Lokasi:</strong> Kediaman Mempelai Wanita</p>
+          
+          <!-- Tambahkan tombol untuk Google Maps -->
+          <a href="https://goo.gl/maps/TeYbiyt5sM7z1CSu8" target="_blank" class="map-button">
+            <i class="fas fa-map-marker-alt"></i> Lihat Lokasi
+          </a>
+        </section>
+      </div>
+      
+      <!-- Card kelima dengan background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section id="couple">
+          <h2 style="font-family: 'Chewy', cursive;">Pasangan Pengantin</h2>
+          <div class="couple-info">
+            <div class="groom">
+              <h3 style="font-family: 'Chewy', cursive;">Ana Yulianti</h3>
+              <p>Putri dari Bapak Wakijan dan Ibu Sadiah</p>
+            </div>
+            <div class="bride">
+              <h3 style="font-family: 'Chewy', cursive;">Ibnu Solahudin</h3>
+              <p>Putra dari Bapak Mualip dan Ibu Siti Munawaroh</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      
+      <!-- Card keenam dengan background bunga -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section id="gifts">
+          <h2>Gifts</h2>
+          <p>Untuk yang ingin berbagi kebahagiaan:</p>
+          <div class="bank-account">
+            <p><strong>Bank BRI</strong></p>
+            <p class="account-number">776901007101535</p>
+            <p>a.n. ANA YULIANTI</p>
+            <button class="copy-button" onclick="copyToClipboard('776901007101535')">
+              <i class="fas fa-copy"></i> Salin Rekening
+            </button>
+            <p><strong>Bank BRI</strong></p>
+            <p class="account-number">668301012531536</p>
+            <p>a.n. IBNU SOLAHUDIN</p>
+            <button class="copy-button" onclick="copyToClipboard('668301012531536')">
+              <i class="fas fa-copy"></i> Salin Rekening
+            </button>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Card ketujuh untuk ucapan -->
+      <div class="card card-with-flower-bg" data-aos="fade-up">
+        <section id="wishes">
+          <h2>Ucapan & Doa</h2>
+          <form id="wishForm" onsubmit="addWish(event)">
+            <div class="form-group">
+              <input type="text" id="wishName" class="form-input" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+              <textarea id="wishMessage" class="form-textarea" placeholder="Ucapan & Doa" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Kirim</button>
+          </form>
+          <div class="wishes-container" id="wishesContainer">
+            <!-- Ucapan akan ditampilkan di sini -->
+          </div>
+        
+        </section>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <p>Terima kasih atas doa dan restu Anda</p>
+        <p>Ana & Ibnu</p>
+        <p class="copyright">© 2025</p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Audio Control -->
+  <audio id="backgroundMusic" loop>
+    <source src="music/bermuara.mp3" type="audio/mp3">
+  </audio>
+  <div class="audio-control" id="musicButton" onclick="toggleMusic()">
+    <i class="fas fa-volume-mute"></i>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="../../assets/vendor/aos/dist/aos.js"></script>
+</body>
+
+</html>
